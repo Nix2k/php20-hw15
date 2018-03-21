@@ -16,6 +16,7 @@
 
 		$sql1 = 'SHOW COLUMNS FROM '.$table[0];
 		$columns = $pdo->query($sql1);
+		if (!$columns) die("Error");
 		echo "<table>
 				<tr>
 					<th>Поле</th>
