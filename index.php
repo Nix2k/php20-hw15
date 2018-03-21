@@ -11,6 +11,14 @@
 	$tables = $pdo->query($sql);
 
 	echo "<h2>Таблицы в БД</h2>";
+?>
+	<h3>Создать таблицу</h3>
+	<form action="create_tab.php" method="GET">
+		<input type="text" name="name" placeholder="Название"><br>
+		<input type="text" name="cols" placeholder="Количество полей"><br>
+		<input type="submit" name="submit" placeholder="Создать"><br>
+	</form>
+<?php
 	foreach ($tables as $table) {
 		echo "<h3>$table[0]</h3>";
 		$sql1 = 'SHOW COLUMNS FROM '.$table[0];
