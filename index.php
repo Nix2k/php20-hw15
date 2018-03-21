@@ -27,6 +27,11 @@
 		foreach ($columns as $col) {
 			echo "<tr>
 					<td>".$col['Field']."</td>
+					<td>".$col['Type']."</td>
+					<td>".$col['Null']."</td>
+					<td>".$col['Key']."</td>
+					<td>".$col['Default']."</td>
+					<td>".$col['Extra']."</td>
 				</tr>";
 		}
 		echo "</table>";
