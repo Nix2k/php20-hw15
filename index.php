@@ -14,8 +14,8 @@
 	foreach ($tables as $table) {
 		echo "<h3>$table[0]</h3>";
 
-		$sql1 = 'SHOW COLUMNS FROM '.$table[0];
-		$columns = $pdo->query($sql1);
+		//$sql1 = 'SHOW COLUMNS FROM '.$table[0];
+		//$columns = $pdo->query($sql1);
 		echo "<table>
 				<tr>
 					<th>Поле</th>
