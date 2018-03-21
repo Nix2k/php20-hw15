@@ -1,5 +1,5 @@
 <?php
-	require_once 'routines.php';
+	require_once './routines.php';
 
 	try {
 	   	$pdo = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
@@ -40,6 +40,8 @@
 					<td>".$col['Key']."</td>
 					<td>".$col['Default']."</td>
 					<td>".$col['Extra']."</td>
+					<td><a href='edit_field.php?table=".$table[0]."&field=".$col['Field']."'>Редактировать</a></td>
+					<td><a href='delete_field.php?table=".$table[0]."&field=".$col['Field']."'>Удалить</a></td>
 				</tr>";
 		}
 		echo '</table>';
