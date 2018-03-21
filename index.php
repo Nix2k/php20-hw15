@@ -16,7 +16,7 @@
 	<form action="create_tab.php" method="GET">
 		<input type="text" name="name" placeholder="Название"><br>
 		<input type="text" name="cols" placeholder="Количество полей"><br>
-		<input type="submit" name="submit" placeholder="Создать"><br>
+		<input type="submit" name="submit" value="Создать"><br>
 	</form>
 <?php
 	foreach ($tables as $table) {
