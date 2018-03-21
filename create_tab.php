@@ -8,7 +8,7 @@
 		$types = '<option>INT</option><option>VARCHAR</option><option>DATE</option>';
 
 		echo "<h2>Структура таблицы </h2>$name";
-		echo '<form action="create_tab.php" method="GET">'
+		echo '<form action="create_tab.php" method="GET">';
 		echo '<input type="hidden" name="cols" value="'.$cols.'"><br>';
 		for ($i = 0; $i<$cols; $i++) {
 			echo '<input type="text" name="fname'.$i.'" placeholder="Название поля"> ';
