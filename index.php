@@ -15,7 +15,6 @@
 		echo "<h3>$table[0]</h3>";
 		$sql1 = 'SHOW COLUMNS FROM '.$table[0];
 		$columns = $pdo->query($sql1);
-		echo '123';
 		echo "<table>
 				<tr>
 					<th>Поле</th>
@@ -25,7 +24,7 @@
 					<th>Значение по умолчанию</th>
 					<th>Дополнительно</th>
 				</tr>";
-		/*foreach ($columns as $col) {
+		foreach ($columns as $col) {
 			echo "<tr>
 					<td>$col['Field']</td>
 					<td>$col['Type']</td>
@@ -34,7 +33,7 @@
 					<td>$col['Default']</td>
 					<td>$col['Extra']</td>
 				</tr>";	
-		}*/
+		}
 		echo "</table>";
 	}
 ?>
