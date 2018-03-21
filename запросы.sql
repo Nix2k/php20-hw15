@@ -1,0 +1,2 @@
+CREATE TABLE `php20hw15`.`users` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(15) NOT NULL , `password` VARCHAR(30) NOT NULL , `description` VARCHAR(50) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB CHARSET=utf8;
+
